@@ -53,8 +53,8 @@ export const llms =
 
 export const defaultLLM = llms?.includes('openai-gpt-4o')
   ? 'openai-gpt-4o'
-  : llms?.includes('gemini-1.0-pro')
-  ? 'gemini-1.0-pro'
+  : llms?.includes('glm')
+  ? 'glm'
   : 'diffbot';
 export const chatModes =
   process.env?.VITE_CHAT_MODES?.trim() != ''

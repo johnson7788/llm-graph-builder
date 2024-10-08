@@ -85,6 +85,7 @@ def get_llm(model: str,max_tokens=1000) -> Any:
         "diffbot" : "gpt-4-0125-preview",
         "openai-gpt-4o":"gpt-4o",
         "openai-gpt-4o-mini": "gpt-4o-mini",
+        "glm": "glm-4-flash"
          }
     if model in model_versions:
         model_version = model_versions[model]

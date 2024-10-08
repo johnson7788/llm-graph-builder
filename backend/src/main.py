@@ -197,7 +197,7 @@ def extract_graph_from_file_local_file(uri, userName, password, database, model,
       raise Exception(f'File content is not available for file : {file_name}')
     return processing_source(uri, userName, password, database, model, file_name, pages, allowedNodes, allowedRelationship, True, merged_file_path)
   else:
-    return processing_source(uri, userName, password, database, model, fileName, [], allowedNodes, allowedRelationship, True, merged_file_path, retry_condition)
+    return processing_source(uri, userName, password, database, model, fileNam, [], allowedNodes, allowedRelationship, True, merged_file_path, retry_condition)
   
 def extract_graph_from_file_s3(uri, userName, password, database, model, source_url, aws_access_key_id, aws_secret_access_key, file_name, allowedNodes, allowedRelationship, retry_condition):
   if retry_condition is None:

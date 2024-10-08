@@ -48,6 +48,14 @@ def get_llm(model: str):
             base_url=os.environ.get("BASE_API_URL","https://api.openai.com/v1"),
             temperature=0,
         )
+    elif "glm" in model:
+        model_name = MODEL_VERSIONS[model]
+        llm = ChatOpenAI(
+            api_key=os.environ.get("OPENAI_API_KEY"),
+            model=model_name,
+            base_url=os.environ.get("BASE_API_URL","https://api.openai.com/v1"),
+            temperature=0,
+        )
 
     elif "azure" in model:
         model_name, api_endpoint, api_key, api_version = env_value.split(",")
