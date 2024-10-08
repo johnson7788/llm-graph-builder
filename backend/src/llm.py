@@ -45,6 +45,7 @@ def get_llm(model: str):
         llm = ChatOpenAI(
             api_key=os.environ.get("OPENAI_API_KEY"),
             model=model_name,
+            base_url=os.environ.get("BASE_API_URL","https://api.openai.com/v1"),
             temperature=0,
         )
 

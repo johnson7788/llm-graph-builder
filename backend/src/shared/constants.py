@@ -6,7 +6,8 @@ MODEL_VERSIONS = {
         "diffbot" : "gpt-4-turbo-2024-04-09",
         "openai-gpt-4o-mini": "gpt-4o-mini-2024-07-18",
         "openai-gpt-4o":"gpt-4o-2024-08-06",
-        "groq-llama3" : "llama3-70b-8192"
+        "groq-llama3" : "llama3-70b-8192",
+        "glm" : "glm-4-flash"
          }
 OPENAI_MODELS = ["openai-gpt-3.5", "openai-gpt-4o", "openai-gpt-4o-mini"]
 GEMINI_MODELS = ["gemini-1.0-pro", "gemini-1.5-pro"]
